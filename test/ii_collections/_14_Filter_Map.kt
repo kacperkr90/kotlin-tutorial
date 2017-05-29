@@ -4,6 +4,7 @@ import ii_collections.data.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
 gst
+gst
 
 class _14_Filter_Map {
     @Test fun testCitiesCustomersAreFrom() {
