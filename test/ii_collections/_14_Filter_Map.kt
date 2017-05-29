@@ -5,7 +5,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 gst
 gst
-
+gst
 class _14_Filter_Map {
     @Test fun testCitiesCustomersAreFrom() {
         assertEquals(setOf(Canberra, Vancouver, Budapest, Ankara, Tokyo), shop.getCitiesCustomersAreFrom())
