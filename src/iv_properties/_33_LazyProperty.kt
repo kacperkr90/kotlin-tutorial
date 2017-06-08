@@ -3,7 +3,16 @@ package iv_properties
 import util.TODO
 
 class LazyProperty(val initializer: () -> Int) {
-    val lazy: Int = todoTask33()
+
+    private var _lazy: Int? = null
+
+    val lazy: Int
+        get() {
+            if (_lazy == null) {
+                _lazy = initializer()
+            }
+            return _lazy ?: throw AssertionError("Initializer set the null")
+        }
 }
 
 fun todoTask33(): Nothing = TODO(
